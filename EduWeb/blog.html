@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      padding: 15px;
+      list-style: none;
+      background-color: #2c3e50;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #f4f4f4;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    .blog-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .blog-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .blog-card .content {
+      padding: 15px;
+    }
+
+    .blog-card h3 {
+      margin: 0 0 10px;
+      color: #34495e;
+    }
+
+    .blog-card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+       <nav>
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Eduford Logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="course.html">COURSE</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <header>
+    <h1>Campus Events & Activities</h1>
+    <p>Stay updated with all the exciting happenings at our university</p>
+  </header>
+
+  <section class="blog-section">
+    <div class="blog-card">
+      <img src="images/examination.jpg.jpeg" alt="Examinations">
+      <div class="content">
+        <h3>Semester Examinations</h3>
+        <p>Conducted every term with a strict evaluation process to ensure academic integrity.</p>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="images/workshop.jpg.jpeg" alt="Workshops">
+      <div class="content">
+        <h3>Workshops & Training</h3>
+        <p>Hands-on workshops in tech, soft skills, and research for holistic learning.</p>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="images/seminar.jpg.jpeg" alt="Seminars">
+      <div class="content">
+        <h3>Seminars & Guest Talks</h3>
+        <p>Experts and alumni share insights on trending topics and career guidance.</p>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="images/event.jpg.jpeg" alt="College Fest">
+      <div class="content">
+        <h3>College Fest</h3>
+        <p>Annual cultural and tech fests with competitions, music, dance, and more!</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
